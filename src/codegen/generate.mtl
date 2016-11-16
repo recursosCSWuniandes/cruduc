@@ -19,7 +19,7 @@
 
 
 ### UC Crear [c.name.toLowerCase()/]
-| Item | Descripcion |
+| Item | Descripción |
 |----------------------|-------------------------------------------|
 |Id caso de uso:| R0 |
 |Nombre caso de uso:| Crear [c.name/] |
