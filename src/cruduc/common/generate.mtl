@@ -1,0 +1,112 @@
+[comment encoding = UTF-8 /]
+[module generate('http://www.eclipse.org/uml2/5.0.0/UML')]
+
+[template public generate(m : Model)]
+[comment @main/]
+
+[file ('home.md', false, 'UTF-8')]
+# Lista de entidades
+[for (c : Class | m.getClasses())]
+-  ['['/]Entidad [c.name/][']'/](#entidad-[c.name.toLowerCase()/]---casos-de-uso)
+[/for]
+
+[for (c: Class | m.getClasses())]
+## Entidad [c.name/] - Casos de Uso
+ - ['['/]Crear [c.name.toLowerCase()/][']'/](#uc-crear-[c.name.toLowerCase()/])
+ - ['['/]Consultar [c.name.toLowerCase()/][']'/](#uc-consultar-[c.name.toLowerCase()/])
+ - ['['/]Editar [c.name.toLowerCase()/][']'/](#uc-editar-[c.name.toLowerCase()/])
+ - ['['/]Eliminar [c.name.toLowerCase()/][']'/](#uc-eliminar-[c.name.toLowerCase()/])
+
+
+### UC Crear [c.name.toLowerCase()/]
+| Item | Descripcion |
+|----------------------|-------------------------------------------|
+|Id caso de uso:| R0 |
+|Nombre caso de uso:| Crear [c.name/] |
+|Autor: | @Generated |
+|Actor:| [c.valueOf('Actor')/] |
+|Resumen:| El actor crea [c.name/] en la aplicación |
+|Precondición: | |
+|Curso básico de eventos:| 1. El usuario ingresa a la aplicación|
+|                        | 2. EL usuario selecciona la opción de crear [c.name/] el formulario de registro se despliega.|
+|                        | 3. EL usuario digita la información del formulario de [c.name/] con los campos de: [c.getPropers()/]|                        
+|                        | 4. Se guardan cambios de [c.name/].|
+|Postcondición:|  |
+|Caminos de excepción ||
+
+
+### UC Editar [c.name.toLowerCase()/]
+| Item | Descripcion |
+|----------------------|-------------------------------------------|
+|Id caso de uso:| R0 |
+|Nombre caso de uso:| Editar [c.name/] |
+|Autor: | @Generated |
+|Actor:| [c.valueOf('Actor')/] |
+|Resumen:| El actor edita [c.name/] en la aplicación |
+|Precondición: | |
+|Curso básico de eventos:| 1. El usuario ingresa a la aplicación|
+|                        | 2. EL usuario selecciona la opción de editar [c.name/] el formulario de registro se despliega.|
+|                        | 3. EL usuario digita la información del formulario de [c.name/] con los campos de: [for (p : Property | c.ownedAttribute)] _[p.name/]_ [/for].|
+|                        | 4. Se guardan cambios de [c.name/].|
+|Postcondición:|  |
+|Caminos de excepción ||
+
+### UC Consultar [c.name.toLowerCase()/]
+| Item | Descripción |
+|----------------------|-------------------------------------------|
+|Id caso de uso:| R0 |
+|Nombre caso de uso:| Consultar [c.name/] |
+|Autor: | @Generated |
+|Actor:| [c.valueOf('Actor')/] |
+|Resumen:| El actor consulta [c.name/] en la aplicación |
+|Precondición: | |
+|Curso básico de eventos:| 1. El usuario ingresa a la aplicación|
+|                        | 2. EL usuario selecciona la opción de listar [c.name/].|
+|                        | 3. La aplicación muestra la información de [c.name/].|
+|Postcondición:|  |
+|Caminos de excepción ||
+
+### UC Eliminar [c.name.toLowerCase()/]
+| Item | Descripción |
+|----------------------|-------------------------------------------|
+|Id caso de uso:| R0 |
+|Nombre caso de uso:| Eliminar [c.name/] |
+|Autor: | @Generated |
+|Actor:| [c.valueOf('Actor')/] |
+|Resumen:| El actor elimina [c.name/] en la aplicación |
+|Precondición: | |
+|Curso básico de eventos:| 1. El usuario ingresa a la aplicación|
+|                        | 2. EL usuario selecciona la opción de eliminar [c.name/].|
+|                        | 3. La aplicación eliminar [c.name/].|
+|Postcondición:|  |
+|Caminos de excepción ||
+
+[/for]
+['['/]Volver arriba[']'/](#lista-de-entidades)
+[/file]
+
+[/template]
+
+[**
+ * Obtiene todas las clases pertenecientes al modelo
+*/]
+[query public getClasses(m : Model) : Sequence(Class) =
+m.eContents()->select(e | e.oclIsTypeOf(Class))
+/]
+[query public valueOf(m : Element, p : String) : String = 
+if (m.hasProperty(p)) then
+m.getEAnnotation('genmymodel').details->any(key = p).value
+else 
+null
+endif
+/]
+[query public hasProperty(m : Element, p : String) : Boolean = 
+m.getEAnnotation('genmymodel').details->exists(key = p)
+/]
+[template public getPropers(c : Class)]
+[for (p : Property | c.ownedAttribute)][if (c.ownedAttribute->size()=i)][ '_'+p.name.concat('_')/][else][if (p.name <> 'id')][ '_'+p.name.concat('_ , ')/][/if][/if][/for]
+[/template]
+
+
+
+
