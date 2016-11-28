@@ -1,5 +1,6 @@
 [comment encoding = UTF-8 /]
 [module generate('http://www.eclipse.org/uml2/5.0.0/UML')]
+[import ::utils /]
 
 [template public generate(m : Model)]
 [comment @main/]
@@ -29,7 +30,7 @@
 |Precondición: | |
 |Curso básico de eventos:| 1. El usuario ingresa a la aplicación|
 |                        | 2. EL usuario selecciona la opción de crear [c.name/] el formulario de registro se despliega.|
-|                        | 3. EL usuario digita la información del formulario de [c.name/] con los campos de: [c.getPropers()/]|                        
+|                        | 3. EL usuario digita la información del formulario de [c.name/] con los campos de: [c.getPropertiesClass()/]|                        
 |                        | 4. Se guardan cambios de [c.name/].|
 |Postcondición:|  |
 |Caminos de excepción ||
@@ -46,7 +47,7 @@
 |Precondición: | |
 |Curso básico de eventos:| 1. El usuario ingresa a la aplicación|
 |                        | 2. EL usuario selecciona la opción de editar [c.name/] el formulario de registro se despliega.|
-|                        | 3. EL usuario digita la información del formulario de [c.name/] con los campos de: [for (p : Property | c.ownedAttribute)] _[p.name/]_ [/for].|
+|                        | 3. EL usuario digita la información del formulario de [c.name/] con los campos de: [c.getPropertiesClass()/]|
 |                        | 4. Se guardan cambios de [c.name/].|
 |Postcondición:|  |
 |Caminos de excepción ||
@@ -87,25 +88,6 @@
 
 [/template]
 
-[**
- * Obtiene todas las clases pertenecientes al modelo
-*/]
-[query public getClasses(m : Model) : Sequence(Class) =
-m.eContents()->select(e | e.oclIsTypeOf(Class))
-/]
-[query public valueOf(m : Element, p : String) : String = 
-if (m.hasProperty(p)) then
-m.getEAnnotation('genmymodel').details->any(key = p).value
-else 
-null
-endif
-/]
-[query public hasProperty(m : Element, p : String) : Boolean = 
-m.getEAnnotation('genmymodel').details->exists(key = p)
-/]
-[template public getPropers(c : Class)]
-[for (p : Property | c.ownedAttribute)][if (c.ownedAttribute->size()=i)][ '_'+p.name.concat('_')/][else][if (p.name <> 'id')][ '_'+p.name.concat('_ , ')/][/if][/if][/for]
-[/template]
 
 
 
