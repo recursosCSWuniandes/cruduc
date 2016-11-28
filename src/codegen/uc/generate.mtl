@@ -1,6 +1,6 @@
 [comment encoding = UTF-8 /]
 [module generate('http://www.eclipse.org/uml2/5.0.0/UML')]
-
+[import codegen::utils/]
 [template public generate(m : Model)]
 [comment @main/]
 
@@ -87,22 +87,6 @@
 
 [/template]
 
-[query public getClasses(m : Model) : Sequence(Class) =
-m.eContents()->select(e | e.oclIsTypeOf(Class))
-/]
-[query public valueOf(m : Element, p : String) : String = 
-if (m.hasProperty(p)) then
-m.getEAnnotation('genmymodel').details->any(key = p).value
-else 
-null
-endif
-/]
-[query public hasProperty(m : Element, p : String) : Boolean = 
-m.getEAnnotation('genmymodel').details->exists(key = p)
-/]
-[template public getPropertiesClass(c : Class)]
-[for (p : Property | c.ownedAttribute)][if (c.ownedAttribute->size()=i)][ '_'+p.name.concat('_')/][else][if (p.name <> 'id')][ '_'+p.name.concat('_ , ')/][/if][/if][/for]
-[/template]
 
 
 
