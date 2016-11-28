@@ -1,12 +1,11 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Acceleo Cruduc Module Runtime Plug-in
-Bundle-SymbolicName: cruduc
+Bundle-Name: Acceleo Crudgen Module Runtime Plug-in
+Bundle-SymbolicName: crudgen
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: cruduc.Activator
 Bundle-Vendor: Eclipse Modeling Project
-Require-Bundle: org.eclipse.core.runtime, 
- org.eclipse.uml2.uml, 
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.uml2.uml,
  org.eclipse.emf.ecore,
  org.eclipse.emf.ecore.xmi,
  org.eclipse.ocl,
@@ -19,3 +18,4 @@ Require-Bundle: org.eclipse.core.runtime,
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
 Eclipse-LazyStart: true
+Export-Package: uc
