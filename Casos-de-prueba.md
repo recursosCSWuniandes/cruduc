@@ -3,3 +3,5 @@
 ![caso1](https://github.com/recursosCSWuniandes/cruduc/blob/master/images/caso1.png)
 
 ##Caso 2a
+
+![caso2a](https://github.com/recursosCSWuniandes/cruduc/blob/master/images/caso1a.png)
