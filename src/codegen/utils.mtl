@@ -362,10 +362,6 @@ co.edu.uniandes.csw
 [s.replace('^\\W+','').replaceAll('(?!^)([A-Z])',' $1').replaceAll('\\W+', ' ').toUpperFirst()/]
 [/template]
 
-[template public getPropertiesClass(c : Class)]
-[for (p : Property | c.ownedAttribute)][if (c.ownedAttribute->size()=i)][ '_'+p.name.concat('_')/][else][if (p.name <> 'id')][ '_'+p.name.concat('_ , ')/][/if][/if][/for]
-[/template]
-
 [template public license(m : Model)]
 The MIT License (MIT)
 
@@ -389,3 +385,21 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 [/template]
+
+[comment]Template para leer los atributos del caso 1 [/comment]
+[template public getPropertiesClass(c : Class)]
+[for (p : Property | c.ownedAttribute)][if (c.ownedAttribute->size()=i)][ '_'+p.name.concat('_')/][else][if (p.name <> 'id')][ '_'+p.name.concat('_ , ')/][/if][/if][/for]
+[/template]
+
+
+[comment]Template para leer los atributos del caso 2a [/comment]
+[template public getPropertiesCase2a(c : Class)]
+[if (c.hasRelationshipAttributes())/]
+[for (a : Property | c.getRelationshipAttributes())] 
+[if (a.isRelationshipOwner() and a.isOne2Many())/]
+_[a.name/]_ de tipo _[a.type.name/]_
+[if/]
+[/for]
+[if/]
+[/template]
+
