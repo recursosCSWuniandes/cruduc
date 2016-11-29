@@ -392,8 +392,8 @@ SOFTWARE.
 [/template]
 
 
-[comment]Template para leer los atributos del caso 2a [/comment]
-[template public getPropertiesCase2a(c : Class)]
+[comment]Template para leer los atributos del caso 2a y del caso 2b [/comment]
+[template public getPropertiesCase2a2b(c : Class)]
 [if (c.hasRelationshipAttributes())/]
 [for (a : Property | c.getRelationshipAttributes())] 
 [if (a.isRelationshipOwner() and a.isOne2Many())/]

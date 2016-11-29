@@ -29,7 +29,7 @@
 |Precondición: | |
 |Curso básico de eventos:| 1. El usuario ingresa a la aplicación|
 |                        | 2. EL usuario selecciona la opción de crear [c.name/] el formulario de registro se despliega.|
-|                        | 3. EL usuario digita la información del formulario de [c.name/] con los campos de: [c.getPropertiesClass()/] [c.getPropertiesCase2a()/]|                        
+|                        | 3. EL usuario digita la información del formulario de [c.name/] con los campos de: [c.getPropertiesClass()/] [c.getPropertiesCase2a2b()/]|                        
 |                        | 4. Se guardan cambios de [c.name/].|
 |Postcondición:|  |
 |Caminos de excepción ||
@@ -46,7 +46,7 @@
 |Precondición: | |
 |Curso básico de eventos:| 1. El usuario ingresa a la aplicación|
 |                        | 2. EL usuario selecciona la opción de editar [c.name/] el formulario de registro se despliega.|
-|                        | 3. EL usuario digita la información del formulario de [c.name/] con los campos de: [c.getPropertiesClass()/] [c.getPropertiesCase2a()/]|
+|                        | 3. EL usuario digita la información del formulario de [c.name/] con los campos de: [c.getPropertiesClass()/] [c.getPropertiesCase2a2b()/]|
 |                        | 4. Se guardan cambios de [c.name/].|
 |Postcondición:|  |
 |Caminos de excepción ||
