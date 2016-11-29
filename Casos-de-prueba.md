@@ -4,4 +4,4 @@
 
 ##Caso 2a
 
-![caso2a](https://github.com/recursosCSWuniandes/cruduc/blob/master/images/caso1a.png)
+![caso2a](https://github.com/recursosCSWuniandes/cruduc/blob/master/images/caso2a.png)
