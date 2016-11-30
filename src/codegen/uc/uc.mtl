@@ -1,10 +1,13 @@
 [comment encoding = UTF-8 /]
+[**
+ * Module to generate CRUD UC
+ */]
 [module uc('http://www.eclipse.org/uml2/5.0.0/UML')]
 [import ::utils/]
 [template public generate(m : Model)]
 [comment @main/]
 
-[file ('home.md', false, 'UTF-8')]
+[file ('UC.md', false, 'UTF-8')]
 # Lista de entidades
 [for (c : Class | m.getClasses())]
 -  ['['/]Entidad [c.name/][']'/](#entidad-[c.name.toLowerCase()/]---casos-de-uso)
@@ -22,7 +25,7 @@
 ### UC Crear [c.name.toLowerCase()/]
 | Item | Descripción |
 |----------------------|-------------------------------------------|
-|Id caso de uso:| R0 |
+|Id caso de uso:| R000 |
 |Nombre caso de uso:| Crear [c.name/] |
 |Autor: | @Generated |
 |Actor:| [c.valueOf('Actor')/] |
@@ -37,9 +40,9 @@
 
 
 ### UC Editar [c.name.toLowerCase()/]
-| Item | Descripcion |
+| Item | Descripción |
 |----------------------|-------------------------------------------|
-|Id caso de uso:| R0 |
+|Id caso de uso:| R000 |
 |Nombre caso de uso:| Editar [c.name/] |
 |Autor: | @Generated |
 |Actor:| [c.valueOf('Actor')/] |
@@ -55,7 +58,7 @@
 ### UC Consultar [c.name.toLowerCase()/]
 | Item | Descripción |
 |----------------------|-------------------------------------------|
-|Id caso de uso:| R0 |
+|Id caso de uso:| R000 |
 |Nombre caso de uso:| Consultar [c.name/] |
 |Autor: | @Generated |
 |Actor:| [c.valueOf('Actor')/] |
@@ -70,7 +73,7 @@
 ### UC Eliminar [c.name.toLowerCase()/]
 | Item | Descripción |
 |----------------------|-------------------------------------------|
-|Id caso de uso:| R0 |
+|Id caso de uso:| R000 |
 |Nombre caso de uso:| Eliminar [c.name/] |
 |Autor: | @Generated |
 |Actor:| [c.valueOf('Actor')/] |

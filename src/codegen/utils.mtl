@@ -412,7 +412,7 @@ SOFTWARE.
 ### UC Agregar _[a.name/]_ de tipo _[a.type.name/]_ a [c.name/]
 | Item | Descripción |
 |----------------------|-------------------------------------------|
-|Id caso de uso:| R0 |
+|Id caso de uso:| R000 |
 |Nombre caso de uso:| Agregar [a.name/] |
 |Autor: | @Generated |
 |Actor:| [c.valueOf('Actor')/] |
@@ -429,7 +429,7 @@ SOFTWARE.
 ### UC Listar _[a.name/]_ de tipo _[a.type.name/]_ a [c.name/]
 | Item | Descripción |
 |----------------------|-------------------------------------------|
-|Id caso de uso:| R0 |
+|Id caso de uso:| R000 |
 |Nombre caso de uso:| Listar [a.name/] |
 |Autor: | @Generated |
 |Actor:| [c.valueOf('Actor')/] |
@@ -444,11 +444,11 @@ SOFTWARE.
 ### UC Eliminar _[a.name/]_ de tipo _[a.type.name/]_ a [c.name/]
 | Item | Descripción |
 |----------------------|-------------------------------------------|
-|Id caso de uso:| R0 |
+|Id caso de uso:| R000 |
 |Nombre caso de uso:| Eliminar [a.name/] |
 |Autor: | @Generated |
 |Actor:| [c.valueOf('Actor')/] |
-|Resumen:| El actor eliminar [a.name/] en la aplicación a [c.name/]|
+|Resumen:| El actor elimina [a.name/] en la aplicación a [c.name/]|
 |Precondición: | |
 |Curso básico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicación|
 |                        | 2. EL [c.valueOf('Actor')/] selecciona la opción de eliminar [a.name/] para [c.name/].|
