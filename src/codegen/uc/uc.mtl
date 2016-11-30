@@ -36,7 +36,7 @@
 |                        | 3. EL [c.valueOf('Actor')/] digita la información del formulario de [c.name/] con los campos de: [c.getPropertiesClass()/] [c.getPropertiesCases2abcd()/]|                        
 |                        | 4. Se guardan cambios de [c.name/].|
 |Postcondición:|  |
-|Caminos de excepción ||
+|Caminos de excepción | |
 
 
 ### UC Editar [c.name.toLowerCase()/]
