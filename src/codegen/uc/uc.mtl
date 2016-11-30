@@ -16,6 +16,7 @@
  - ['['/]Consultar [c.name.toLowerCase()/][']'/](#uc-consultar-[c.name.toLowerCase()/])
  - ['['/]Editar [c.name.toLowerCase()/][']'/](#uc-editar-[c.name.toLowerCase()/])
  - ['['/]Eliminar [c.name.toLowerCase()/][']'/](#uc-eliminar-[c.name.toLowerCase()/])
+[c.getPropertiesCase3Menu()/]
 
 
 ### UC Crear [c.name.toLowerCase()/]
@@ -27,9 +28,9 @@
 |Actor:| [c.valueOf('Actor')/] |
 |Resumen:| El actor crea [c.name/] en la aplicación |
 |Precondición: | |
-|Curso básico de eventos:| 1. El usuario ingresa a la aplicación|
-|                        | 2. EL usuario selecciona la opción de crear [c.name/] el formulario de registro se despliega.|
-|                        | 3. EL usuario digita la información del formulario de [c.name/] con los campos de: [c.getPropertiesClass()/] [c.getPropertiesCases2abcd()/]|                        
+|Curso básico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicación|
+|                        | 2. EL [c.valueOf('Actor')/] selecciona la opción de crear [c.name/] el formulario de registro se despliega.|
+|                        | 3. EL [c.valueOf('Actor')/] digita la información del formulario de [c.name/] con los campos de: [c.getPropertiesClass()/] [c.getPropertiesCases2abcd()/]|                        
 |                        | 4. Se guardan cambios de [c.name/].|
 |Postcondición:|  |
 |Caminos de excepción ||
@@ -44,9 +45,9 @@
 |Actor:| [c.valueOf('Actor')/] |
 |Resumen:| El actor edita [c.name/] en la aplicación |
 |Precondición: | |
-|Curso básico de eventos:| 1. El usuario ingresa a la aplicación|
-|                        | 2. EL usuario selecciona la opción de editar [c.name/] el formulario de registro se despliega.|
-|                        | 3. EL usuario digita la información del formulario de [c.name/] con los campos de: [c.getPropertiesClass()/] [c.getPropertiesCases2abcd()/]|
+|Curso básico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicación|
+|                        | 2. EL [c.valueOf('Actor')/] selecciona la opción de editar [c.name/] el formulario de registro se despliega.|
+|                        | 3. EL [c.valueOf('Actor')/] digita la información del formulario de [c.name/] con los campos de: [c.getPropertiesClass()/] [c.getPropertiesCases2abcd()/]|
 |                        | 4. Se guardan cambios de [c.name/].|
 |Postcondición:|  |
 |Caminos de excepción ||
@@ -60,8 +61,8 @@
 |Actor:| [c.valueOf('Actor')/] |
 |Resumen:| El actor consulta [c.name/] en la aplicación |
 |Precondición: | |
-|Curso básico de eventos:| 1. El usuario ingresa a la aplicación|
-|                        | 2. EL usuario selecciona la opción de listar [c.name/].|
+|Curso básico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicación|
+|                        | 2. EL [c.valueOf('Actor')/] selecciona la opción de listar [c.name/].|
 |                        | 3. La aplicación muestra la información de [c.name/].|
 |Postcondición:|  |
 |Caminos de excepción ||
@@ -75,11 +76,14 @@
 |Actor:| [c.valueOf('Actor')/] |
 |Resumen:| El actor elimina [c.name/] en la aplicación |
 |Precondición: | |
-|Curso básico de eventos:| 1. El usuario ingresa a la aplicación|
-|                        | 2. EL usuario selecciona la opción de eliminar [c.name/].|
+|Curso básico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicación|
+|                        | 2. EL [c.valueOf('Actor')/] selecciona la opción de eliminar [c.name/].|
 |                        | 3. La aplicación eliminar [c.name/].|
 |Postcondición:|  |
 |Caminos de excepción ||
+
+[c.getPropertiesCase3()/]
+
 
 [/for]
 ['['/]Volver arriba[']'/](#lista-de-entidades)
