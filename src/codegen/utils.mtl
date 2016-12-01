@@ -455,6 +455,8 @@ SOFTWARE.
 |                        | 3. La aplicación elimina [a.name/] de [c.name/].|
 |Postcondición:|  |
 |Caminos de excepción ||
+[else]
+[null/]
 [/if]
 [/for]
 [/if]
@@ -468,6 +470,8 @@ SOFTWARE.
  - ['['/]Agregar _[a.name/]_ de tipo _[a.type.name/]_ a [c.name/][']'/](#uc-agregar-[a.name/]-de-tipo-[a.type.name.toLowerCase()/]-a-[c.name.toLowerCase()/])
  - ['['/]Listar _[a.name/]_ de tipo _[a.type.name/]_ a [c.name/][']'/](#uc-listar-[a.name/]-de-tipo-[a.type.name.toLowerCase()/]-a-[c.name.toLowerCase()/])
  - ['['/]Eliminar _[a.name/]_ de tipo _[a.type.name/]_ a [c.name/][']'/](#uc-eliminar-[a.name/]-de-tipo-[a.type.name.toLowerCase()/]-a-[c.name.toLowerCase()/])
+[else]
+[null/]
 [/if]
 [/for]
 [/if]
@@ -482,6 +486,8 @@ SOFTWARE.
  - ['['/]Editar _[a.name/]_ de tipo _[a.type.name/]_ a [c.name/][']'/](#uc-editar-[a.name/]-de-tipo-[a.type.name.toLowerCase()/]-a-[c.name.toLowerCase()/])
  - ['['/]Eliminar _[a.name/]_ de tipo _[a.type.name/]_ a [c.name/][']'/](#uc-eliminar-[a.name/]-de-tipo-[a.type.name.toLowerCase()/]-a-[c.name.toLowerCase()/])
  - ['['/]Listar _[a.name/]_ de tipo _[a.type.name/]_ a [c.name/][']'/](#uc-listar-[a.name/]-de-tipo-[a.type.name.toLowerCase()/]-a-[c.name.toLowerCase()/])
+[else]
+[null/]
 [/if]
 [/for]
 [/if]
@@ -556,6 +562,8 @@ SOFTWARE.
 |                        | 3. La aplicación muestra la información de [a.name/] asociadas a [c.name/].|
 |Postcondición:|  |
 |Caminos de excepción ||
+[else]
+[null/]
 [/if]
 [/for]
 [/if]

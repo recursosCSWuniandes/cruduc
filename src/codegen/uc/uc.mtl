@@ -19,8 +19,8 @@
  - ['['/]Consultar [c.name.toLowerCase()/][']'/](#uc-consultar-[c.name.toLowerCase()/])
  - ['['/]Editar [c.name.toLowerCase()/][']'/](#uc-editar-[c.name.toLowerCase()/])
  - ['['/]Eliminar [c.name.toLowerCase()/][']'/](#uc-eliminar-[c.name.toLowerCase()/])
-[c.getPropertiesCase3Menu()/]
-[c.getPropertiesCase4Menu()/]
+[if (c.getPropertiesCase3Menu()<>null)/]
+[if (c.getPropertiesCase4Menu()<>null)/]
 
 
 ### UC Crear [c.name.toLowerCase()/]
