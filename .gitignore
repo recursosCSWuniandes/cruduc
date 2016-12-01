@@ -18,3 +18,5 @@ bin/
 # Eclipse Files #
 .settings/
 .metadata
+
+.tmp/
