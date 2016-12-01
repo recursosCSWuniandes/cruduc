@@ -86,10 +86,9 @@
 |Postcondición:|  |
 |Caminos de excepción ||
 
-[c.getPropertiesCase3()/]
+[if (c.getPropertiesCase3()<>null)/]
 
-[c.getPropertiesCase4()/]
-
+[if (c.getPropertiesCase4()<>null)/]
 
 [/for]
 ['['/]Volver arriba[']'/](#lista-de-entidades)
