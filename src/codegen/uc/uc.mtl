@@ -19,8 +19,8 @@
  - ['['/]Consultar [c.name.toLowerCase()/][']'/](#uc-consultar-[c.name.toLowerCase()/])
  - ['['/]Editar [c.name.toLowerCase()/][']'/](#uc-editar-[c.name.toLowerCase()/])
  - ['['/]Eliminar [c.name.toLowerCase()/][']'/](#uc-eliminar-[c.name.toLowerCase()/])
-[if (c.getPropertiesCase3Menu()<>null)/]
-[if (c.getPropertiesCase4Menu()<>null)/]
+[c.getPropertiesCase3Menu()/]
+[c.getPropertiesCase4Menu()/]
 
 
 ### UC Crear [c.name.toLowerCase()/]
@@ -86,9 +86,9 @@
 |Postcondición:|  |
 |Caminos de excepción ||
 
-[if (c.getPropertiesCase3()<>null)/]
+[c.getPropertiesCase3()/]
 
-[if (c.getPropertiesCase4()<>null)/]
+[c.getPropertiesCase4()/]
 
 [/for]
 ['['/]Volver arriba[']'/](#lista-de-entidades)
