@@ -20,6 +20,7 @@
  - ['['/]Editar [c.name.toLowerCase()/][']'/](#uc-editar-[c.name.toLowerCase()/])
  - ['['/]Eliminar [c.name.toLowerCase()/][']'/](#uc-eliminar-[c.name.toLowerCase()/])
 [c.getPropertiesCase3Menu()/]
+[c.getPropertiesCase4Menu()/]
 
 
 ### UC Crear [c.name.toLowerCase()/]
@@ -86,6 +87,8 @@
 |Caminos de excepción ||
 
 [c.getPropertiesCase3()/]
+
+[c.getPropertiesCase4()/]
 
 
 [/for]
