@@ -30,11 +30,11 @@
 |Nombre caso de uso:| Crear [c.name/] |
 |Autor: | @Generated |
 |Actor:| [c.valueOf('Actor')/] |
-|Resumen:| El actor crea [c.name/] en la aplicación |
+|Resumen:| El actor crea [c.name/] en la aplicación. |
 |Precondición: | |
-|Curso básico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicación|
+|Curso básico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicación.|
 |                        | 2. EL [c.valueOf('Actor')/] selecciona la opción de crear [c.name/] el formulario de registro se despliega.|
-|                        | 3. EL [c.valueOf('Actor')/] digita la información del formulario de [c.name/] con los campos de: [c.getPropertiesClass()/] [c.getPropertiesCases2abcd()/]|                        
+|                        | 3. EL [c.valueOf('Actor')/] digita la información del formulario de [c.name/] con los campos de: [c.getPropertiesClass()/] [c.getPropertiesCases2abcd()/].|                        
 |                        | 4. Se guardan cambios de [c.name/].|
 |Postcondición:|  |
 |Caminos de excepción | |
@@ -47,11 +47,11 @@
 |Nombre caso de uso:| Editar [c.name/] |
 |Autor: | @Generated |
 |Actor:| [c.valueOf('Actor')/] |
-|Resumen:| El actor edita [c.name/] en la aplicación |
+|Resumen:| El actor edita [c.name/] en la aplicación. |
 |Precondición: | |
-|Curso básico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicación|
+|Curso básico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicación.|
 |                        | 2. EL [c.valueOf('Actor')/] selecciona la opción de editar [c.name/] el formulario de registro se despliega.|
-|                        | 3. EL [c.valueOf('Actor')/] digita la información del formulario de [c.name/] con los campos de: [c.getPropertiesClass()/] [c.getPropertiesCases2abcd()/]|
+|                        | 3. EL [c.valueOf('Actor')/] digita la información del formulario de [c.name/] con los campos de: [c.getPropertiesClass()/] [c.getPropertiesCases2abcd()/].|
 |                        | 4. Se guardan cambios de [c.name/].|
 |Postcondición:|  |
 |Caminos de excepción ||
@@ -63,9 +63,9 @@
 |Nombre caso de uso:| Consultar [c.name/] |
 |Autor: | @Generated |
 |Actor:| [c.valueOf('Actor')/] |
-|Resumen:| El actor consulta [c.name/] en la aplicación |
+|Resumen:| El actor consulta [c.name/] en la aplicación. |
 |Precondición: | |
-|Curso básico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicación|
+|Curso básico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicación.|
 |                        | 2. EL [c.valueOf('Actor')/] selecciona la opción de listar [c.name/].|
 |                        | 3. La aplicación muestra la información de [c.name/].|
 |Postcondición:|  |
@@ -78,9 +78,9 @@
 |Nombre caso de uso:| Eliminar [c.name/] |
 |Autor: | @Generated |
 |Actor:| [c.valueOf('Actor')/] |
-|Resumen:| El actor elimina [c.name/] en la aplicación |
+|Resumen:| El actor elimina [c.name/] en la aplicación. |
 |Precondición: | |
-|Curso básico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicación|
+|Curso básico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicación.|
 |                        | 2. EL [c.valueOf('Actor')/] selecciona la opción de eliminar [c.name/].|
 |                        | 3. La aplicación eliminar [c.name/].|
 |Postcondición:|  |
@@ -95,9 +95,3 @@
 [/file]
 
 [/template]
-
-
-
-
-
-

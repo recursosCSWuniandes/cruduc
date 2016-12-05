@@ -416,11 +416,11 @@ SOFTWARE.
 |Nombre caso de uso:| Agregar [a.name/] |
 |Autor: | @Generated |
 |Actor:| [c.valueOf('Actor')/] |
-|Resumen:| El actor agrega [a.name/] en la aplicación a [c.name/]|
+|Resumen:| El actor agrega [a.name/] en la aplicación a [c.name/].|
 |Precondición: | |
-|Curso básico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicación|
+|Curso básico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicación.|
 |                        | 2. EL [c.valueOf('Actor')/] selecciona la opción de [c.name/] para agregar .|
-|                        | 3. EL [c.valueOf('Actor')/] selecciona la opción de agregar [a.name/]|
+|                        | 3. EL [c.valueOf('Actor')/] selecciona la opción de agregar [a.name/].|
 |                        | 4. EL [c.valueOf('Actor')/] selecciona [a.name/].|
 |                        | 5. Se guardan cambios de [c.name/].|
 |Postcondición:|  |
@@ -433,9 +433,9 @@ SOFTWARE.
 |Nombre caso de uso:| Listar [a.name/] |
 |Autor: | @Generated |
 |Actor:| [c.valueOf('Actor')/] |
-|Resumen:| El actor lista [a.name/] en la aplicación a [c.name/]|
+|Resumen:| El actor lista [a.name/] en la aplicación a [c.name/].|
 |Precondición: | |
-|Curso básico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicación|
+|Curso básico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicación.|
 |                        | 2. EL [c.valueOf('Actor')/] selecciona la opción de listar [c.name/].|
 |                        | 3. La aplicación muestra la información de [a.name/] asociadas a [c.name/].|
 |Postcondición:|  |
@@ -448,9 +448,9 @@ SOFTWARE.
 |Nombre caso de uso:| Eliminar [a.name/] |
 |Autor: | @Generated |
 |Actor:| [c.valueOf('Actor')/] |
-|Resumen:| El actor elimina [a.name/] en la aplicación a [c.name/]|
+|Resumen:| El actor elimina [a.name/] en la aplicación a [c.name/].|
 |Precondición: | |
-|Curso básico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicación|
+|Curso básico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicación.|
 |                        | 2. EL [c.valueOf('Actor')/] selecciona la opción de eliminar [a.name/] para [c.name/].|
 |                        | 3. La aplicación elimina [a.name/] de [c.name/].|
 |Postcondición:|  |
@@ -505,11 +505,11 @@ SOFTWARE.
 |Nombre caso de uso:| Crear [a.name/] |
 |Autor: | @Generated |
 |Actor:| [c.valueOf('Actor')/] |
-|Resumen:| El actor crea [a.name/] en la aplicación a [c.name/]|
+|Resumen:| El actor crea [a.name/] en la aplicación a [c.name/].|
 |Precondición: | |
-|Curso básico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicación|
+|Curso básico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicación.|
 |                        | 2. EL [c.valueOf('Actor')/] selecciona la opción de [c.name/].|
-|                        | 3. EL [c.valueOf('Actor')/] selecciona la opción de crear [a.type.name/]|
+|                        | 3. EL [c.valueOf('Actor')/] selecciona la opción de crear [a.type.name/].|
 |                        | 4. EL [c.valueOf('Actor')/] completa el formulario de [a.type.name/].|
 |                        | 5. Se guardan cambios de [c.name/].|
 |Postcondición:|  |
@@ -522,11 +522,11 @@ SOFTWARE.
 |Nombre caso de uso:| Editar [a.name/] |
 |Autor: | @Generated |
 |Actor:| [c.valueOf('Actor')/] |
-|Resumen:| El actor edita [a.name/] en la aplicación a [c.name/]|
+|Resumen:| El actor edita [a.name/] en la aplicación a [c.name/].|
 |Precondición: | |
-|Curso básico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicación|
+|Curso básico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicación.|
 |                        | 2. EL [c.valueOf('Actor')/] selecciona la opción de [c.name/].|
-|                        | 3. EL [c.valueOf('Actor')/] selecciona la opción de editar [a.type.name/]|
+|                        | 3. EL [c.valueOf('Actor')/] selecciona la opción de editar [a.type.name/].|
 |                        | 4. EL [c.valueOf('Actor')/] completa el formulario de [a.type.name/].|
 |                        | 5. Se guardan cambios de [c.name/].|
 |Postcondición:|  |
@@ -539,9 +539,9 @@ SOFTWARE.
 |Nombre caso de uso:| Eliminar [a.name/] |
 |Autor: | @Generated |
 |Actor:| [c.valueOf('Actor')/] |
-|Resumen:| El actor elimina [a.name/] en la aplicación a [c.name/]|
+|Resumen:| El actor elimina [a.name/] en la aplicación a [c.name/].|
 |Precondición: | |
-|Curso básico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicación|
+|Curso básico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicación.|
 |                        | 2. EL [c.valueOf('Actor')/] selecciona la opción de [c.name/].|
 |                        | 3. EL [c.valueOf('Actor')/] selecciona la opción de eliminar [a.type.name/].|
 |                        | 4. La aplicación elimina [a.type.name/] de [c.name/].|
@@ -555,9 +555,9 @@ SOFTWARE.
 |Nombre caso de uso:| Listar [a.name/] |
 |Autor: | @Generated |
 |Actor:| [c.valueOf('Actor')/] |
-|Resumen:| El actor lista [a.name/] en la aplicación a [c.name/]|
+|Resumen:| El actor lista [a.name/] en la aplicación a [c.name/].|
 |Precondición: | |
-|Curso básico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicación|
+|Curso básico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicación.|
 |                        | 2. EL [c.valueOf('Actor')/] selecciona la opción [c.name/].|
 |                        | 3. La aplicación muestra la información de [a.name/] asociadas a [c.name/].|
 |Postcondición:|  |
