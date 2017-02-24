@@ -48,13 +48,13 @@ and a.getOtherEnd().getUpper() <> 1
 /]
 
 [**
- * Obtiene la colecci贸n de atributos de la clase, cuyo tipo es otra clase del modelo y son aceptados por el generador.<br>
+ * Obtiene la colecci脙鲁n de atributos de la clase, cuyo tipo es otra clase del modelo y son aceptados por el generador.<br>
  * 
- * Actualmente los atributos v谩lidos cumplen con las siguientes caracter铆sticas:
+ * Actualmente los atributos v脙隆lidos cumplen con las siguientes caracter脙颅sticas:
  * - Es navegable
- * - Su l铆mite m谩ximo de objetos es diferente de cero
- * - El otro extremo de la relaci贸n apunta a la clase que realiza la consulta
- * - En caso de haber agregaci贸n, el otro extremo de la relaci贸n no puede tener agregaci贸n y su l铆mite m谩ximo debe ser 1
+ * - Su l脙颅mite m脙隆ximo de objetos es diferente de cero
+ * - El otro extremo de la relaci脙鲁n apunta a la clase que realiza la consulta
+ * - En caso de haber agregaci脙鲁n, el otro extremo de la relaci脙鲁n no puede tener agregaci脙鲁n y su l脙颅mite m脙隆ximo debe ser 1
  * - En caso del atributo ser composite, el extremo opuesto debe ser navegable
 */]
 [query public getRelationshipAttributes(c : Class) : Set(Property) =
@@ -163,11 +163,11 @@ Set{'String','Boolean', 'Date', 'Long', 'Integer', 'Image'}->exists(t | a.type <
 [query public isRequired(a : Property) : Boolean = self.getLower() > 0 /]
 
 [**
- * Permite identificar si el atributo es el due帽o de una relaci贸n.
+ * Permite identificar si el atributo es el due脙卤o de una relaci脙鲁n.
  * Esto se da cuando el atributo es navegable y:
- * - La relaci贸n es unidireccional
- * - La relaci贸n es bidireccional, uno a muchos, y el atributo es de cardinalidad 1 o 0..1
- * - La relaci贸n es bidireccional, muchos a muchos o uno a uno, entonces se decide cualquiera (se implementa comparando nombres y aquel que sea mayor que el otro)
+ * - La relaci脙鲁n es unidireccional
+ * - La relaci脙鲁n es bidireccional, uno a muchos, y el atributo es de cardinalidad 1 o 0..1
+ * - La relaci脙鲁n es bidireccional, muchos a muchos o uno a uno, entonces se decide cualquiera (se implementa comparando nombres y aquel que sea mayor que el otro)
 */]
 [query public isRelationshipOwner(a : Property) : Boolean =
     a.isNavigable()
@@ -410,51 +410,51 @@ SOFTWARE.
 [for (a : Property | c.getRelationshipAttributes())] 
 [if (a.isRelationshipOwner() and a.isOne2Many())]
 ### UC Agregar _[a.name/]_ de tipo _[a.type.name/]_ a [c.name/]
-| Item | Descripci髇 |
+| Item | Descripci贸n |
 |----------------------|-------------------------------------------|
 |Id caso de uso:| R000 |
 |Nombre caso de uso:| Agregar [a.name/] |
 |Autor: | @Generated |
 |Actor:| [c.valueOf('Actor')/] |
-|Resumen:| El actor agrega [a.name/] en la aplicaci髇 a [c.name/].|
-|Precondici髇: | |
-|Curso b醩ico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicaci髇.|
-|                        | 2. EL [c.valueOf('Actor')/] selecciona la opci髇 de [c.name/] para agregar .|
-|                        | 3. EL [c.valueOf('Actor')/] selecciona la opci髇 de agregar [a.name/].|
-|                        | 4. EL [c.valueOf('Actor')/] selecciona [a.name/].|
+|Resumen:| El actor agrega [a.name/] en la aplicaci贸n a [c.name/].|
+|Precondici贸n: | |
+|Curso b谩sico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicaci贸n.|
+|                        | 2. El [c.valueOf('Actor')/] selecciona la opci贸n de [c.name/] para agregar .|
+|                        | 3. El [c.valueOf('Actor')/] selecciona la opci贸n de agregar [a.name/].|
+|                        | 4. El [c.valueOf('Actor')/] selecciona [a.name/].|
 |                        | 5. Se guardan cambios de [c.name/].|
-|Postcondici髇:|  |
-|Caminos de excepci髇 ||
+|Postcondici贸n:|  |
+|Caminos de excepci贸n ||
 
 ### UC Listar _[a.name/]_ de tipo _[a.type.name/]_ a [c.name/]
-| Item | Descripci髇 |
+| Item | Descripci贸n |
 |----------------------|-------------------------------------------|
 |Id caso de uso:| R000 |
 |Nombre caso de uso:| Listar [a.name/] |
 |Autor: | @Generated |
 |Actor:| [c.valueOf('Actor')/] |
-|Resumen:| El actor lista [a.name/] en la aplicaci髇 a [c.name/].|
-|Precondici髇: | |
-|Curso b醩ico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicaci髇.|
-|                        | 2. EL [c.valueOf('Actor')/] selecciona la opci髇 de listar [c.name/].|
-|                        | 3. La aplicaci髇 muestra la informaci髇 de [a.name/] asociadas a [c.name/].|
-|Postcondici髇:|  |
-|Caminos de excepci髇 ||
+|Resumen:| El actor lista [a.name/] en la aplicaci贸n a [c.name/].|
+|Precondici贸n: | |
+|Curso b谩sico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicaci贸n.|
+|                        | 2. El [c.valueOf('Actor')/] selecciona la opci贸n de listar [c.name/].|
+|                        | 3. La aplicaci贸n muestra la informaci贸n de [a.name/] asociadas a [c.name/].|
+|Postcondici贸n:|  |
+|Caminos de excepci贸n ||
 
 ### UC Eliminar _[a.name/]_ de tipo _[a.type.name/]_ a [c.name/]
-| Item | Descripci髇 |
+| Item | Descripci贸n |
 |----------------------|-------------------------------------------|
 |Id caso de uso:| R000 |
 |Nombre caso de uso:| Eliminar [a.name/] |
 |Autor: | @Generated |
 |Actor:| [c.valueOf('Actor')/] |
-|Resumen:| El actor elimina [a.name/] en la aplicaci髇 a [c.name/].|
-|Precondici髇: | |
-|Curso b醩ico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicaci髇.|
-|                        | 2. EL [c.valueOf('Actor')/] selecciona la opci髇 de eliminar [a.name/] para [c.name/].|
-|                        | 3. La aplicaci髇 elimina [a.name/] de [c.name/].|
-|Postcondici髇:|  |
-|Caminos de excepci髇 ||
+|Resumen:| El actor elimina [a.name/] en la aplicaci贸n a [c.name/].|
+|Precondici贸n: | |
+|Curso b谩sico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicaci贸n.|
+|                        | 2. El [c.valueOf('Actor')/] selecciona la opci贸n de eliminar [a.name/] para [c.name/].|
+|                        | 3. La aplicaci贸n elimina [a.name/] de [c.name/].|
+|Postcondici贸n:|  |
+|Caminos de excepci贸n ||
 [else]
 [null/]
 [/if]
@@ -499,69 +499,69 @@ SOFTWARE.
 [for (a : Property | c.getRelationshipAttributes())] 
 [if (a.isRelationshipOwner() <> 'true' and a.isOne2Many()) and a.isComposite()]
 ### UC crear _[a.name/]_ de tipo _[a.type.name/]_ a [c.name/]
-| Item | Descripci髇 |
+| Item | Descripci贸n |
 |----------------------|-------------------------------------------|
 |Id caso de uso:| R000 |
 |Nombre caso de uso:| Crear [a.name/] |
 |Autor: | @Generated |
 |Actor:| [c.valueOf('Actor')/] |
-|Resumen:| El actor crea [a.name/] en la aplicaci髇 a [c.name/].|
-|Precondici髇: | |
-|Curso b醩ico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicaci髇.|
-|                        | 2. EL [c.valueOf('Actor')/] selecciona la opci髇 de [c.name/].|
-|                        | 3. EL [c.valueOf('Actor')/] selecciona la opci髇 de crear [a.type.name/].|
-|                        | 4. EL [c.valueOf('Actor')/] completa el formulario de [a.type.name/].|
+|Resumen:| El actor crea [a.name/] en la aplicaci贸n a [c.name/].|
+|Precondici贸n: | |
+|Curso b谩sico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicaci贸n.|
+|                        | 2. El [c.valueOf('Actor')/] selecciona la opci贸n de [c.name/].|
+|                        | 3. El [c.valueOf('Actor')/] selecciona la opci贸n de crear [a.type.name/].|
+|                        | 4. El [c.valueOf('Actor')/] completa el formulario de [a.type.name/].|
 |                        | 5. Se guardan cambios de [c.name/].|
-|Postcondici髇:|  |
-|Caminos de excepci髇 ||
+|Postcondici贸n:|  |
+|Caminos de excepci贸n ||
 
 ### UC editar _[a.name/]_ de tipo _[a.type.name/]_ a [c.name/]
-| Item | Descripci髇 |
+| Item | Descripci贸n |
 |----------------------|-------------------------------------------|
 |Id caso de uso:| R000 |
 |Nombre caso de uso:| Editar [a.name/] |
 |Autor: | @Generated |
 |Actor:| [c.valueOf('Actor')/] |
-|Resumen:| El actor edita [a.name/] en la aplicaci髇 a [c.name/].|
-|Precondici髇: | |
-|Curso b醩ico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicaci髇.|
-|                        | 2. EL [c.valueOf('Actor')/] selecciona la opci髇 de [c.name/].|
-|                        | 3. EL [c.valueOf('Actor')/] selecciona la opci髇 de editar [a.type.name/].|
-|                        | 4. EL [c.valueOf('Actor')/] completa el formulario de [a.type.name/].|
+|Resumen:| El actor edita [a.name/] en la aplicaci贸n a [c.name/].|
+|Precondici贸n: | |
+|Curso b谩sico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicaci贸n.|
+|                        | 2. El [c.valueOf('Actor')/] selecciona la opci贸n de [c.name/].|
+|                        | 3. El [c.valueOf('Actor')/] selecciona la opci贸n de editar [a.type.name/].|
+|                        | 4. El [c.valueOf('Actor')/] completa el formulario de [a.type.name/].|
 |                        | 5. Se guardan cambios de [c.name/].|
-|Postcondici髇:|  |
-|Caminos de excepci髇 ||
+|Postcondici贸n:|  |
+|Caminos de excepci贸n ||
 
 ### UC eliminar _[a.name/]_ de tipo _[a.type.name/]_ a [c.name/]
-| Item | Descripci髇 |
+| Item | Descripci贸n |
 |----------------------|-------------------------------------------|
 |Id caso de uso:| R000 |
 |Nombre caso de uso:| Eliminar [a.name/] |
 |Autor: | @Generated |
 |Actor:| [c.valueOf('Actor')/] |
-|Resumen:| El actor elimina [a.name/] en la aplicaci髇 a [c.name/].|
-|Precondici髇: | |
-|Curso b醩ico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicaci髇.|
-|                        | 2. EL [c.valueOf('Actor')/] selecciona la opci髇 de [c.name/].|
-|                        | 3. EL [c.valueOf('Actor')/] selecciona la opci髇 de eliminar [a.type.name/].|
-|                        | 4. La aplicaci髇 elimina [a.type.name/] de [c.name/].|
-|Postcondici髇:|  |
-|Caminos de excepci髇 ||
+|Resumen:| El actor elimina [a.name/] en la aplicaci贸n a [c.name/].|
+|Precondici贸n: | |
+|Curso b谩sico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicaci贸n.|
+|                        | 2. El [c.valueOf('Actor')/] selecciona la opci贸n de [c.name/].|
+|                        | 3. El [c.valueOf('Actor')/] selecciona la opci贸n de eliminar [a.type.name/].|
+|                        | 4. La aplicaci贸n elimina [a.type.name/] de [c.name/].|
+|Postcondici贸n:|  |
+|Caminos de excepci贸n ||
 
 ### UC Listar _[a.name/]_ de tipo _[a.type.name/]_ a [c.name/]
-| Item | Descripci髇 |
+| Item | Descripci贸n |
 |----------------------|-------------------------------------------|
 |Id caso de uso:| R0 |
 |Nombre caso de uso:| Listar [a.name/] |
 |Autor: | @Generated |
 |Actor:| [c.valueOf('Actor')/] |
-|Resumen:| El actor lista [a.name/] en la aplicaci髇 a [c.name/].|
-|Precondici髇: | |
-|Curso b醩ico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicaci髇.|
-|                        | 2. EL [c.valueOf('Actor')/] selecciona la opci髇 [c.name/].|
-|                        | 3. La aplicaci髇 muestra la informaci髇 de [a.name/] asociadas a [c.name/].|
-|Postcondici髇:|  |
-|Caminos de excepci髇 ||
+|Resumen:| El actor lista [a.name/] en la aplicaci贸n a [c.name/].|
+|Precondici贸n: | |
+|Curso b谩sico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicaci贸n.|
+|                        | 2. El [c.valueOf('Actor')/] selecciona la opci贸n [c.name/].|
+|                        | 3. La aplicaci贸n muestra la informaci贸n de [a.name/] asociadas a [c.name/].|
+|Postcondici贸n:|  |
+|Caminos de excepci贸n ||
 [else]
 [null/]
 [/if]
