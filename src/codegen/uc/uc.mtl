@@ -24,67 +24,67 @@
 
 
 ### UC Crear [c.name.toLowerCase()/]
-| Item | Descripci髇 |
+| Item | Descripci贸n |
 |----------------------|-------------------------------------------|
 |Id caso de uso:| R000 |
 |Nombre caso de uso:| Crear [c.name/] |
 |Autor: | @Generated |
 |Actor:| [c.valueOf('Actor')/] |
-|Resumen:| El actor crea [c.name/] en la aplicaci髇. |
-|Precondici髇: | |
-|Curso b醩ico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicaci髇.|
-|                        | 2. EL [c.valueOf('Actor')/] selecciona la opci髇 de crear [c.name/] el formulario de registro se despliega.|
-|                        | 3. EL [c.valueOf('Actor')/] digita la informaci髇 del formulario de [c.name/] con los campos de: [c.getPropertiesClass()/] [c.getPropertiesCases2abcd()/].|                        
+|Resumen:| El actor crea [c.name/] en la aplicaci贸n. |
+|Precondici贸n: | |
+|Curso b谩sico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicaci贸n.|
+|                        | 2. EL [c.valueOf('Actor')/] selecciona la opci贸n de crear [c.name/] el formulario de registro se despliega.|
+|                        | 3. EL [c.valueOf('Actor')/] digita la informaci贸n del formulario de [c.name/] con los campos de: [c.getPropertiesClass()/] [c.getPropertiesCases2abcd()/].|                        
 |                        | 4. Se guardan cambios de [c.name/].|
-|Postcondici髇:|  |
-|Caminos de excepci髇 | |
+|Postcondici贸n:|  |
+|Caminos de excepci贸n | |
 
 
 ### UC Editar [c.name.toLowerCase()/]
-| Item | Descripci髇 |
+| Item | Descripci贸n |
 |----------------------|-------------------------------------------|
 |Id caso de uso:| R000 |
 |Nombre caso de uso:| Editar [c.name/] |
 |Autor: | @Generated |
 |Actor:| [c.valueOf('Actor')/] |
-|Resumen:| El actor edita [c.name/] en la aplicaci髇. |
-|Precondici髇: | |
-|Curso b醩ico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicaci髇.|
-|                        | 2. EL [c.valueOf('Actor')/] selecciona la opci髇 de editar [c.name/] el formulario de registro se despliega.|
-|                        | 3. EL [c.valueOf('Actor')/] digita la informaci髇 del formulario de [c.name/] con los campos de: [c.getPropertiesClass()/] [c.getPropertiesCases2abcd()/].|
+|Resumen:| El actor edita [c.name/] en la aplicaci贸n. |
+|Precondici贸n: | |
+|Curso b谩sico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicaci贸n.|
+|                        | 2. El [c.valueOf('Actor')/] selecciona la opci贸n de editar [c.name/] el formulario de registro se despliega.|
+|                        | 3. El [c.valueOf('Actor')/] digita la informaci贸n del formulario de [c.name/] con los campos de: [c.getPropertiesClass()/] [c.getPropertiesCases2abcd()/].|
 |                        | 4. Se guardan cambios de [c.name/].|
-|Postcondici髇:|  |
-|Caminos de excepci髇 ||
+|Postcondici贸n:|  |
+|Caminos de excepci贸n ||
 
 ### UC Consultar [c.name.toLowerCase()/]
-| Item | Descripci髇 |
+| Item | Descripci贸n |
 |----------------------|-------------------------------------------|
 |Id caso de uso:| R000 |
 |Nombre caso de uso:| Consultar [c.name/] |
 |Autor: | @Generated |
 |Actor:| [c.valueOf('Actor')/] |
-|Resumen:| El actor consulta [c.name/] en la aplicaci髇. |
-|Precondici髇: | |
-|Curso b醩ico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicaci髇.|
-|                        | 2. EL [c.valueOf('Actor')/] selecciona la opci髇 de listar [c.name/].|
-|                        | 3. La aplicaci髇 muestra la informaci髇 de [c.name/].|
-|Postcondici髇:|  |
-|Caminos de excepci髇 ||
+|Resumen:| El actor consulta [c.name/] en la aplicaci贸n. |
+|Precondici贸n: | |
+|Curso b谩sico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicaci贸n.|
+|                        | 2. EL [c.valueOf('Actor')/] selecciona la opci贸n de listar [c.name/].|
+|                        | 3. La aplicaci贸n muestra la informaci贸n de [c.name/].|
+|Postcondici贸n:|  |
+|Caminos de excepci贸n ||
 
 ### UC Eliminar [c.name.toLowerCase()/]
-| Item | Descripci髇 |
+| Item | Descripci贸n |
 |----------------------|-------------------------------------------|
 |Id caso de uso:| R000 |
 |Nombre caso de uso:| Eliminar [c.name/] |
 |Autor: | @Generated |
 |Actor:| [c.valueOf('Actor')/] |
-|Resumen:| El actor elimina [c.name/] en la aplicaci髇. |
-|Precondici髇: | |
-|Curso b醩ico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicaci髇.|
-|                        | 2. EL [c.valueOf('Actor')/] selecciona la opci髇 de eliminar [c.name/].|
-|                        | 3. La aplicaci髇 eliminar [c.name/].|
-|Postcondici髇:|  |
-|Caminos de excepci髇 ||
+|Resumen:| El actor elimina [c.name/] en la aplicaci贸n. |
+|Precondici贸n: | |
+|Curso b谩sico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicaci贸n.|
+|                        | 2. El [c.valueOf('Actor')/] selecciona la opci贸n de eliminar [c.name/].|
+|                        | 3. La aplicaci贸n eliminar [c.name/].|
+|Postcondici贸n:|  |
+|Caminos de excepci贸n ||
 
 [c.getPropertiesCase3()/]
 
