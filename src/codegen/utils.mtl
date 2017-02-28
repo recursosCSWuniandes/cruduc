@@ -568,3 +568,17 @@ SOFTWARE.
 [/for]
 [/if]
 [/template]
+
+[comment]Template para obtener el actor de cada clase:
+1. Si, se define la propiedad Actor por clase se asocia el valor.
+2. Si no hay propiedad Actor, se imprime la palabra Actor.
+[/comment]
+[template public getActor(c : Class)]
+[if (c.valueOf('Actor') <> null)]
+|Actor:| [c.valueOf('Actor')/] |
+[else]
+|Actor:| Actor |
+
+[/if]
+
+[/template]
