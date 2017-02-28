@@ -574,11 +574,5 @@ SOFTWARE.
 2. Si no hay propiedad Actor, se imprime la palabra Actor.
 [/comment]
 [template public getActor(c : Class)]
-[if (c.valueOf('Actor') <> null)]
-|Actor:| [c.valueOf('Actor')/] |
-[else]
-|Actor:| Actor |
-
-[/if]
-
+[if (c.valueOf('Actor') <> null)]|Actor:| [c.valueOf('Actor')/] |[else]|Actor:| Actor |[/if]
 [/template]
