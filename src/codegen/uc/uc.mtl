@@ -40,44 +40,44 @@
 
 
 ### UC Editar [c.name.toLowerCase()/]
-| Item | DescripciÃ³n |
+| Item | Descripción |
 |----------------------|-------------------------------------------|
 |Id caso de uso:| R000 |
 |Nombre caso de uso:| Editar [c.name/] |
 |Autor: | @Generated |
 [c.getActor()/]
-|Resumen:| El actor edita [c.name/] en la aplicaciÃ³n. |
-|PrecondiciÃ³n: | |
-|Curso bÃ¡sico de eventos:| 1. El actor ingresa a la aplicación.|
+|Resumen:| El actor edita [c.name/] en la aplicación. |
+|Precondición: | |
+|Curso básico de eventos:| 1. El actor ingresa a la aplicación.|
 |                        | 2. El actor selecciona la opción de editar [c.name/] el formulario de registro se despliega.|
 |                        | 3. El actor digita la información del formulario de [c.name/] con los campos de: [c.getPropertiesClass()/] [c.getPropertiesCases2abcd()/].|
 |                        | 4. Se guardan cambios de [c.name/].|
-|PostcondiciÃ³n:|  |
-|Caminos de excepciÃ³n ||
+|Postcondición:|  |
+|Caminos de excepción ||
 
 ### UC Consultar [c.name.toLowerCase()/]
-| Item | DescripciÃ³n |
+| Item | Descripción |
 |----------------------|-------------------------------------------|
 |Id caso de uso:| R000 |
 |Nombre caso de uso:| Consultar [c.name/] |
 |Autor: | @Generated |
 [c.getActor()/]
 |Resumen:| El actor consulta [c.name/] en la aplicación. |
-|PrecondiciÃ³n: | |
+|Precondición: | |
 |Curso básico de eventos:| 1. El actor ingresa a la aplicación.|
 |                        | 2. El actor selecciona la opción de listar [c.name/].|
-|                        | 3. La aplicaciÃ³n muestra la información de [c.name/].|
-|PostcondiciÃ³n:|  |
-|Caminos de excepciÃ³n ||
+|                        | 3. La aplicación muestra la información de [c.name/].|
+|Postcondición:|  |
+|Caminos de excepción ||
 
 ### UC Eliminar [c.name.toLowerCase()/]
-| Item | DescripciÃ³n |
+| Item | Descripción |
 |----------------------|-------------------------------------------|
 |Id caso de uso:| R000 |
 |Nombre caso de uso:| Eliminar [c.name/] |
 |Autor: | @Generated |
 [c.getActor()/]
-|Resumen:| El actor elimina [c.name/] en la aplicaciÃ³n. |
+|Resumen:| El actor elimina [c.name/] en la aplicación. |
 |Precondición: | |
 |Curso básico de eventos:| 1. El actor ingresa a la aplicación.|
 |                        | 2. El actor selecciona la opción de eliminar [c.name/].|
