@@ -415,13 +415,13 @@ SOFTWARE.
 |Id caso de uso:| R000 |
 |Nombre caso de uso:| Agregar [a.name/] |
 |Autor: | @Generated |
-|Actor:| [c.valueOf('Actor')/] |
+[c.getActor()/]
 |Resumen:| El actor agrega [a.name/] en la aplicación a [c.name/].|
 |Precondición: | |
-|Curso básico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicación.|
-|                        | 2. El [c.valueOf('Actor')/] selecciona la opción de [c.name/] para agregar .|
-|                        | 3. El [c.valueOf('Actor')/] selecciona la opción de agregar [a.name/].|
-|                        | 4. El [c.valueOf('Actor')/] selecciona [a.name/].|
+|Curso básico de eventos:| 1. El actor ingresa a la aplicación.|
+|                        | 2. El actor selecciona la opción de [c.name/] para agregar .|
+|                        | 3. El actor selecciona la opción de agregar [a.name/].|
+|                        | 4. El actor selecciona [a.name/].|
 |                        | 5. Se guardan cambios de [c.name/].|
 |Postcondición:|  |
 |Caminos de excepción ||
@@ -432,11 +432,11 @@ SOFTWARE.
 |Id caso de uso:| R000 |
 |Nombre caso de uso:| Listar [a.name/] |
 |Autor: | @Generated |
-|Actor:| [c.valueOf('Actor')/] |
+[c.getActor()/]
 |Resumen:| El actor lista [a.name/] en la aplicación a [c.name/].|
 |Precondición: | |
-|Curso básico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicación.|
-|                        | 2. El [c.valueOf('Actor')/] selecciona la opción de listar [c.name/].|
+|Curso básico de eventos:| 1. El actor ingresa a la aplicación.|
+|                        | 2. El actor selecciona la opción de listar [c.name/].|
 |                        | 3. La aplicación muestra la información de [a.name/] asociadas a [c.name/].|
 |Postcondición:|  |
 |Caminos de excepción ||
@@ -447,11 +447,11 @@ SOFTWARE.
 |Id caso de uso:| R000 |
 |Nombre caso de uso:| Eliminar [a.name/] |
 |Autor: | @Generated |
-|Actor:| [c.valueOf('Actor')/] |
+[c.getActor()/]
 |Resumen:| El actor elimina [a.name/] en la aplicación a [c.name/].|
 |Precondición: | |
-|Curso básico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicación.|
-|                        | 2. El [c.valueOf('Actor')/] selecciona la opción de eliminar [a.name/] para [c.name/].|
+|Curso básico de eventos:| 1. El actor ingresa a la aplicación.|
+|                        | 2. El actor selecciona la opción de eliminar [a.name/] para [c.name/].|
 |                        | 3. La aplicación elimina [a.name/] de [c.name/].|
 |Postcondición:|  |
 |Caminos de excepción ||
@@ -504,13 +504,13 @@ SOFTWARE.
 |Id caso de uso:| R000 |
 |Nombre caso de uso:| Crear [a.name/] |
 |Autor: | @Generated |
-|Actor:| [c.valueOf('Actor')/] |
+[c.getActor()/]
 |Resumen:| El actor crea [a.name/] en la aplicación a [c.name/].|
 |Precondición: | |
-|Curso básico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicación.|
-|                        | 2. El [c.valueOf('Actor')/] selecciona la opción de [c.name/].|
-|                        | 3. El [c.valueOf('Actor')/] selecciona la opción de crear [a.type.name/].|
-|                        | 4. El [c.valueOf('Actor')/] completa el formulario de [a.type.name/].|
+|Curso básico de eventos:| 1. El actor ingresa a la aplicación.|
+|                        | 2. El actor selecciona la opción de [c.name/].|
+|                        | 3. El actor selecciona la opción de crear [a.type.name/].|
+|                        | 4. El actor completa el formulario de [a.type.name/].|
 |                        | 5. Se guardan cambios de [c.name/].|
 |Postcondición:|  |
 |Caminos de excepción ||
@@ -521,13 +521,13 @@ SOFTWARE.
 |Id caso de uso:| R000 |
 |Nombre caso de uso:| Editar [a.name/] |
 |Autor: | @Generated |
-|Actor:| [c.valueOf('Actor')/] |
+[c.getActor()/]
 |Resumen:| El actor edita [a.name/] en la aplicación a [c.name/].|
 |Precondición: | |
-|Curso básico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicación.|
-|                        | 2. El [c.valueOf('Actor')/] selecciona la opción de [c.name/].|
-|                        | 3. El [c.valueOf('Actor')/] selecciona la opción de editar [a.type.name/].|
-|                        | 4. El [c.valueOf('Actor')/] completa el formulario de [a.type.name/].|
+|Curso básico de eventos:| 1. El actor ingresa a la aplicación.|
+|                        | 2. El actor selecciona la opción de [c.name/].|
+|                        | 3. El actor selecciona la opción de editar [a.type.name/].|
+|                        | 4. El actor completa el formulario de [a.type.name/].|
 |                        | 5. Se guardan cambios de [c.name/].|
 |Postcondición:|  |
 |Caminos de excepción ||
@@ -538,12 +538,12 @@ SOFTWARE.
 |Id caso de uso:| R000 |
 |Nombre caso de uso:| Eliminar [a.name/] |
 |Autor: | @Generated |
-|Actor:| [c.valueOf('Actor')/] |
+[c.getActor()/]
 |Resumen:| El actor elimina [a.name/] en la aplicación a [c.name/].|
 |Precondición: | |
-|Curso básico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicación.|
-|                        | 2. El [c.valueOf('Actor')/] selecciona la opción de [c.name/].|
-|                        | 3. El [c.valueOf('Actor')/] selecciona la opción de eliminar [a.type.name/].|
+|Curso básico de eventos:| 1. El actor ingresa a la aplicación.|
+|                        | 2. El actor selecciona la opción de [c.name/].|
+|                        | 3. El actor selecciona la opción de eliminar [a.type.name/].|
 |                        | 4. La aplicación elimina [a.type.name/] de [c.name/].|
 |Postcondición:|  |
 |Caminos de excepción ||
@@ -554,11 +554,11 @@ SOFTWARE.
 |Id caso de uso:| R0 |
 |Nombre caso de uso:| Listar [a.name/] |
 |Autor: | @Generated |
-|Actor:| [c.valueOf('Actor')/] |
+[c.getActor()/]
 |Resumen:| El actor lista [a.name/] en la aplicación a [c.name/].|
 |Precondición: | |
-|Curso básico de eventos:| 1. El [c.valueOf('Actor')/] ingresa a la aplicación.|
-|                        | 2. El [c.valueOf('Actor')/] selecciona la opción [c.name/].|
+|Curso básico de eventos:| 1. El actor ingresa a la aplicación.|
+|                        | 2. El actor selecciona la opción [c.name/].|
 |                        | 3. La aplicación muestra la información de [a.name/] asociadas a [c.name/].|
 |Postcondición:|  |
 |Caminos de excepción ||
