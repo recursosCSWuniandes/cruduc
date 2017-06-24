@@ -48,13 +48,13 @@ and a.getOtherEnd().getUpper() <> 1
 /]
 
 [**
- * Obtiene la colecciÃ³n de atributos de la clase, cuyo tipo es otra clase del modelo y son aceptados por el generador.<br>
+ * Obtiene la colecci&oacute;n de atributos de la clase, cuyo tipo es otra clase del modelo y son aceptados por el generador.<br>
  * 
- * Actualmente los atributos vÃ¡lidos cumplen con las siguientes caracterÃ­sticas:
+ * Actualmente los atributos v&aacute;lidos cumplen con las siguientes caracter&iacute;sticas:
  * - Es navegable
- * - Su lÃ­mite mÃ¡ximo de objetos es diferente de cero
- * - El otro extremo de la relaciÃ³n apunta a la clase que realiza la consulta
- * - En caso de haber agregaciÃ³n, el otro extremo de la relaciÃ³n no puede tener agregaciÃ³n y su lÃ­mite mÃ¡ximo debe ser 1
+ * - Su l&iacute;mite m&aacute;ximo de objetos es diferente de cero
+ * - El otro extremo de la relaci&oacute;n apunta a la clase que realiza la consulta
+ * - En caso de haber agregaci&oacute;n, el otro extremo de la relaci&oacute;n no puede tener agregaci&oacute;n y su l&iacute;mite m&aacute;ximo debe ser 1
  * - En caso del atributo ser composite, el extremo opuesto debe ser navegable
 */]
 [query public getRelationshipAttributes(c : Class) : Set(Property) =
@@ -163,11 +163,11 @@ Set{'String','Boolean', 'Date', 'Long', 'Integer', 'Image'}->exists(t | a.type <
 [query public isRequired(a : Property) : Boolean = self.getLower() > 0 /]
 
 [**
- * Permite identificar si el atributo es el dueÃ±o de una relaciÃ³n.
+ * Permite identificar si el atributo es el dueÃ±o de una relaci&oacute;n.
  * Esto se da cuando el atributo es navegable y:
- * - La relaciÃ³n es unidireccional
- * - La relaciÃ³n es bidireccional, uno a muchos, y el atributo es de cardinalidad 1 o 0..1
- * - La relaciÃ³n es bidireccional, muchos a muchos o uno a uno, entonces se decide cualquiera (se implementa comparando nombres y aquel que sea mayor que el otro)
+ * - La relaci&oacute;n es unidireccional
+ * - La relaci&oacute;n es bidireccional, uno a muchos, y el atributo es de cardinalidad 1 o 0..1
+ * - La relaci&oacute;n es bidireccional, muchos a muchos o uno a uno, entonces se decide cualquiera (se implementa comparando nombres y aquel que sea mayor que el otro)
 */]
 [query public isRelationshipOwner(a : Property) : Boolean =
     a.isNavigable()
@@ -410,51 +410,51 @@ SOFTWARE.
 [for (a : Property | c.getRelationshipAttributes())] 
 [if (a.isRelationshipOwner() and a.isOne2Many())]
 ### UC Agregar _[a.name/]_ a [c.name/]
-| Item | Descripción |
+| Item | Descripci&oacute;n |
 |----------------------|-------------------------------------------|
 |Id caso de uso:| R000 |
 |Nombre caso de uso:| Agregar [a.name/] |
 |Autor: | @Generated |
 [c.getActor()/]
-|Resumen:| El actor agrega [a.name/] en la aplicación a [c.name/].|
-|Precondición: | |
-|Curso básico de eventos:| 1. El actor ingresa a la aplicación.|
-|                        | 2. El actor selecciona la opción de [c.name/] para agregar .|
-|                        | 3. El actor selecciona la opción de agregar [a.name/].|
+|Resumen:| El actor agrega [a.name/] en la aplicaci&oacute;n a [c.name/].|
+|Precondici&oacute;n: | |
+|Curso b&aacute;sico de eventos:| 1. El actor ingresa a la aplicaci&oacute;n.|
+|                        | 2. El actor selecciona la opci&oacute;n de [c.name/] para agregar .|
+|                        | 3. El actor selecciona la opci&oacute;n de agregar [a.name/].|
 |                        | 4. El actor selecciona [a.name/].|
 |                        | 5. Se guardan cambios de [c.name/].|
-|Postcondición:|  |
-|Caminos de excepción ||
+|Postcondici&oacute;n:|  |
+|Caminos de excepci&oacute;n ||
 
 ### UC Listar _[a.name/]_ a [c.name/]
-| Item | Descripción |
+| Item | Descripci&oacute;n |
 |----------------------|-------------------------------------------|
 |Id caso de uso:| R000 |
 |Nombre caso de uso:| Listar [a.name/] |
 |Autor: | @Generated |
 [c.getActor()/]
-|Resumen:| El actor lista [a.name/] en la aplicación a [c.name/].|
-|Precondición: | |
-|Curso básico de eventos:| 1. El actor ingresa a la aplicación.|
-|                        | 2. El actor selecciona la opción de listar [c.name/].|
-|                        | 3. La aplicación muestra la información de [a.name/] asociadas a [c.name/].|
-|Postcondición:|  |
-|Caminos de excepción ||
+|Resumen:| El actor lista [a.name/] en la aplicaci&oacute;n a [c.name/].|
+|Precondici&oacute;n: | |
+|Curso b&aacute;sico de eventos:| 1. El actor ingresa a la aplicaci&oacute;n.|
+|                        | 2. El actor selecciona la opci&oacute;n de listar [c.name/].|
+|                        | 3. La aplicaci&oacute;n muestra la informaci&oacute;n de [a.name/] asociadas a [c.name/].|
+|Postcondici&oacute;n:|  |
+|Caminos de excepci&oacute;n ||
 
 ### UC Eliminar _[a.name/]_ a [c.name/]
-| Item | Descripción |
+| Item | Descripci&oacute;n |
 |----------------------|-------------------------------------------|
 |Id caso de uso:| R000 |
 |Nombre caso de uso:| Eliminar [a.name/] |
 |Autor: | @Generated |
 [c.getActor()/]
-|Resumen:| El actor elimina [a.name/] en la aplicación a [c.name/].|
-|Precondición: | |
-|Curso básico de eventos:| 1. El actor ingresa a la aplicación.|
-|                        | 2. El actor selecciona la opción de eliminar [a.name/] para [c.name/].|
-|                        | 3. La aplicación elimina [a.name/] de [c.name/].|
-|Postcondición:|  |
-|Caminos de excepción ||
+|Resumen:| El actor elimina [a.name/] en la aplicaci&oacute;n a [c.name/].|
+|Precondici&oacute;n: | |
+|Curso b&aacute;sico de eventos:| 1. El actor ingresa a la aplicaci&oacute;n.|
+|                        | 2. El actor selecciona la opci&oacute;n de eliminar [a.name/] para [c.name/].|
+|                        | 3. La aplicaci&oacute;n elimina [a.name/] de [c.name/].|
+|Postcondici&oacute;n:|  |
+|Caminos de excepci&oacute;n ||
 [else]
 [null/]
 [/if]
@@ -499,69 +499,69 @@ SOFTWARE.
 [for (a : Property | c.getRelationshipAttributes())] 
 [if (a.isRelationshipOwner() <> 'true' and a.isOne2Many()) and a.isComposite()]
 ### UC crear _[a.name/]_ a [c.name/]
-| Item | Descripción |
+| Item | Descripci&oacute;n |
 |----------------------|-------------------------------------------|
 |Id caso de uso:| R000 |
 |Nombre caso de uso:| Crear [a.name/] |
 |Autor: | @Generated |
 [c.getActor()/]
-|Resumen:| El actor crea [a.name/] en la aplicación a [c.name/].|
-|Precondición: | |
-|Curso básico de eventos:| 1. El actor ingresa a la aplicación.|
-|                        | 2. El actor selecciona la opción de [c.name/].|
-|                        | 3. El actor selecciona la opción de crear [a.type.name/].|
+|Resumen:| El actor crea [a.name/] en la aplicaci&oacute;n a [c.name/].|
+|Precondici&oacute;n: | |
+|Curso b&aacute;sico de eventos:| 1. El actor ingresa a la aplicaci&oacute;n.|
+|                        | 2. El actor selecciona la opci&oacute;n de [c.name/].|
+|                        | 3. El actor selecciona la opci&oacute;n de crear [a.type.name/].|
 |                        | 4. El actor completa el formulario de [a.type.name/].|
 |                        | 5. Se guardan cambios de [c.name/].|
-|Postcondición:|  |
-|Caminos de excepción ||
+|Postcondici&oacute;n:|  |
+|Caminos de excepci&oacute;n ||
 
 ### UC editar _[a.name/]_ a [c.name/]
-| Item | Descripción |
+| Item | Descripci&oacute;n |
 |----------------------|-------------------------------------------|
-|Id caso de uso:| R000 |
+|Id caso de uso:| R001 |
 |Nombre caso de uso:| Editar [a.name/] |
 |Autor: | @Generated |
 [c.getActor()/]
-|Resumen:| El actor edita [a.name/] en la aplicación a [c.name/].|
-|Precondición: | |
-|Curso básico de eventos:| 1. El actor ingresa a la aplicación.|
-|                        | 2. El actor selecciona la opción de [c.name/].|
-|                        | 3. El actor selecciona la opción de editar [a.type.name/].|
+|Resumen:| El actor edita [a.name/] en la aplicaci&oacute;n a [c.name/].|
+|Precondici&oacute;n: | |
+|Curso b&aacute;sico de eventos:| 1. El actor ingresa a la aplicaci&oacute;n.|
+|                        | 2. El actor selecciona la opci&oacute;n de [c.name/].|
+|                        | 3. El actor selecciona la opci&oacute;n de editar [a.type.name/].|
 |                        | 4. El actor completa el formulario de [a.type.name/].|
 |                        | 5. Se guardan cambios de [c.name/].|
-|Postcondición:|  |
-|Caminos de excepción ||
+|Postcondici&oacute;n:|  |
+|Caminos de excepci&oacute;n ||
 
 ### UC eliminar _[a.name/]_ a [c.name/]
-| Item | Descripción |
+| Item | Descripci&oacute;n |
 |----------------------|-------------------------------------------|
-|Id caso de uso:| R000 |
+|Id caso de uso:| R002 |
 |Nombre caso de uso:| Eliminar [a.name/] |
 |Autor: | @Generated |
 [c.getActor()/]
-|Resumen:| El actor elimina [a.name/] en la aplicación a [c.name/].|
-|Precondición: | |
-|Curso básico de eventos:| 1. El actor ingresa a la aplicación.|
-|                        | 2. El actor selecciona la opción de [c.name/].|
-|                        | 3. El actor selecciona la opción de eliminar [a.type.name/].|
-|                        | 4. La aplicación elimina [a.type.name/] de [c.name/].|
-|Postcondición:|  |
-|Caminos de excepción ||
+|Resumen:| El actor elimina [a.name/] en la aplicaci&oacute;n a [c.name/].|
+|Precondici&oacute;n: | |
+|Curso b&aacute;sico de eventos:| 1. El actor ingresa a la aplicaci&oacute;n.|
+|                        | 2. El actor selecciona la opci&oacute;n de [c.name/].|
+|                        | 3. El actor selecciona la opci&oacute;n de eliminar [a.type.name/].|
+|                        | 4. La aplicaci&oacute;n elimina [a.type.name/] de [c.name/].|
+|Postcondici&oacute;n:|  |
+|Caminos de excepci&oacute;n ||
 
 ### UC Listar _[a.name/]_ a [c.name/]
-| Item | Descripción |
+| Item | Descripci&oacute;n |
 |----------------------|-------------------------------------------|
-|Id caso de uso:| R0 |
+|Id caso de uso:| R003 |
 |Nombre caso de uso:| Listar [a.name/] |
 |Autor: | @Generated |
 [c.getActor()/]
-|Resumen:| El actor lista [a.name/] en la aplicación a [c.name/].|
-|Precondición: | |
-|Curso básico de eventos:| 1. El actor ingresa a la aplicación.|
-|                        | 2. El actor selecciona la opción [c.name/].|
-|                        | 3. La aplicación muestra la información de [a.name/] asociadas a [c.name/].|
-|Postcondición:|  |
-|Caminos de excepción ||
+|Resumen:| El actor lista [a.name/] en la aplicaci&oacute;n a [c.name/].|
+|Precondici&oacute;n: | |
+|Curso b&aacute;sico de eventos:| 1. El actor ingresa a la aplicaci&oacute;n.|
+|                        | 2. El actor selecciona la opci&oacute;n [c.name/].|
+|                        | 3. La aplicaci&oacute;n muestra la informaci&oacute;n de [a.name/] asociadas a [c.name/].|
+|Postcondici&oacute;n:|  |
+|Caminos de excepci&oacute;n ||
 [else]
 [null/]
 [/if]
