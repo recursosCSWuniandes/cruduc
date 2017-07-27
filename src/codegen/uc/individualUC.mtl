@@ -1,0 +1,89 @@
+[comment encoding = UTF-8 /]
+[**
+ * Module to generate CRUD UC
+ */]
+[module individualUC('http://www.eclipse.org/uml2/5.0.0/UML')]
+[import ::utils/]
+[template public generate(c : Class)]
+[comment @main/]
+[file ('UC' + c.getName() + '.md', false, 'UTF-8')]
+## Entidad [c.name/] - Casos de Uso
+ - ['['/]Crear [c.name.toLowerCase()/][']'/](#uc-crear-[c.name.toLowerCase()/])
+ - ['['/]Consultar [c.name.toLowerCase()/][']'/](#uc-consultar-[c.name.toLowerCase()/])
+ - ['['/]Editar [c.name.toLowerCase()/][']'/](#uc-editar-[c.name.toLowerCase()/])
+ - ['['/]Eliminar [c.name.toLowerCase()/][']'/](#uc-eliminar-[c.name.toLowerCase()/])
+[c.getPropertiesCase3Menu()/]
+[c.getPropertiesCase4Menu()/]
+
+### UC Crear [c.name.toLowerCase()/]
+| Item | Descripci&oacute;n |
+|----------------------|-------------------------------------------|
+|Id caso de uso:| R000 |
+|Nombre caso de uso:| Crear [c.name/] |
+|Autor: | @Generated |
+[c.getActor()/]
+|Resumen:| El actor crea [c.name/] en la aplicaci&oacute;n. |
+|Precondici&oacute;n: | |
+|Curso b&aacute;sico de eventos:| 1. El actor ingresa a la aplicaci&oacute;n.|
+|                        | 2. El actor selecciona la opci&oacute;n de crear [c.name/], el formulario de registro se despliega.|
+|                        | 3. El actor digita la informaci&oacute;n del formulario de [c.name/] con los campos de: [c.getPropertiesClass()/] [c.getPropertiesCases2abcd()/].|                        
+|                        | 4. Se guardan cambios de [c.name/].|
+|Postcondici&oacute;n:|  |
+|Caminos de excepci&oacuten | |
+
+
+### UC Editar [c.name.toLowerCase()/]
+| Item | Descripci&oacute;n |
+|----------------------|-------------------------------------------|
+|Id caso de uso:| R001 |
+|Nombre caso de uso:| Editar [c.name/] |
+|Autor: | @Generated |
+[c.getActor()/]
+|Resumen:| El actor edita [c.name/] en la aplicaci&oacute;n. |
+|Precondici&oacute;n: | |
+|Curso b&aacute;sico de eventos:| 1. El actor ingresa a la aplicaci&oacute;n.|
+|                        | 2. El actor selecciona la opci&oacute;n de editar [c.name/] el formulario de registro se despliega.|
+|                        | 3. El actor digita la informaci&oacute;n del formulario de [c.name/] con los campos de: [c.getPropertiesClass()/] [c.getPropertiesCases2abcd()/].|
+|                        | 4. Se guardan cambios de [c.name/].|
+|Postcondici&oacute;n:|  |
+|Caminos de excepci&oacute;n ||
+
+### UC Consultar [c.name.toLowerCase()/]
+| Item | Descripci&oacute;n |
+|----------------------|-------------------------------------------|
+|Id caso de uso:| R002 |
+|Nombre caso de uso:| Consultar [c.name/] |
+|Autor: | @Generated |
+[c.getActor()/]
+|Resumen:| El actor consulta [c.name/] en la aplicaci&oacute;n. |
+|Precondici&oacute;n: | |
+|Curso b&aacute;sico de eventos:| 1. El actor ingresa a la aplicaci&oacute;n.|
+|                        | 2. El actor selecciona la opci&oacute;n de listar [c.name/].|
+|                        | 3. La aplicaci&oacute;n muestra la informaci&oacute;n de [c.name/].|
+|Postcondici&oacute;n:|  |
+|Caminos de excepci&oacute;n ||
+
+### UC Eliminar [c.name.toLowerCase()/]
+| Item | Descripci&oacute;n |
+|----------------------|-------------------------------------------|
+|Id caso de uso:| R003 |
+|Nombre caso de uso:| Eliminar [c.name/] |
+|Autor: | @Generated |
+[c.getActor()/]
+|Resumen:| El actor elimina [c.name/] en la aplicaci&oacute;n. |
+|Precondici&oacute;n: | |
+|Curso b&aacute;sico de eventos:| 1. El actor ingresa a la aplicaci&oacute;n.|
+|                        | 2. El actor selecciona la opci&oacute;n de eliminar [c.name/].|
+|                        | 3. La aplicaci&oacute;n eliminar [c.name/].|
+|Postcondici&oacute;n:|  |
+|Caminos de excepci&oacute;n ||
+
+
+[c.getPropertiesCase3()/]
+
+[c.getPropertiesCase4()/]
+
+['['/]Volver arriba[']'/](#lista-de-entidades)
+[/file]
+
+[/template]
